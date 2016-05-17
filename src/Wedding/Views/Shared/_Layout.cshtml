@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hello World</title>
+    <link href="~/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="sidebar">
+        <p>Choose a page:</p>
+        <ul class="menu">
+            <li class="active">
+                <a asp-controller="App" asp-action="Index">Main</a>
+            </li>
+            <li>
+                <a asp-controller="App" asp-action="Directions">Directions</a>
+            </li>
+            <li>
+                <a asp-controller="App" asp-action="Schedule">Schedule</a>
+            </li>
+            <li>
+                <a asp-controller="App" asp-action="Contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="wrapper">
+        <div id="main">
+            <div>
+                @RenderBody()
+            </div>
+        </div>
+
+        <div id="footer">
+            Noah and Alaina
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿body {
+    margin: 0;
+}
+
+#main
+{
+    background-color: darkcyan;
+}
+
+#footer
+{
+        
+}
+
+#sidebar
+{
+    background-color: slateblue;
+    color: greenyellow;
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    left: 0;
+}
+
+#sidebar a
+{
+    color: white;
+}
+
+.menu
+{
+    list-style: none;    
+}
+
+.menu li.active
+{
+    font-weight: bold;
+}
+
+#wrapper
+{
+    margin: 0 0 0 250px;
+}
